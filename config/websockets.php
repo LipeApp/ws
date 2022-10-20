@@ -114,13 +114,13 @@ return [
          * certificate chain of issuers. The private key also may be contained
          * in a separate file specified by local_pk.
          */
-        'local_cert' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_CERT', "/etc/letsencrypt/archive/test.lipe.uz/cert1.pem"),
+        'local_cert' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_CERT', "/etc/letsencrypt/live/test.lipe.uz/certificate.crt"),
 
         /*
          * Path to local private key file on filesystem in case of separate files for
          * certificate (local_cert) and private key.
          */
-        'local_pk' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_PK', "/etc/letsencrypt/archive/test.lipe.uz/privatekey1.pem"),
+        'local_pk' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_PK', "/etc/letsencrypt/live/test.lipe.uz/private.key"),
 
         /*
          * Passphrase for your local_cert file.

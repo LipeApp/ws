@@ -26,7 +26,7 @@ window.Pusher = Pusher;
 window.Echo = new Echo({
     broadcaster: 'pusher',
     key: 'lipeapp_key',
-    wsHost: window.location.hostname,
+    wsHost: "test.lipe.uz",
     wsPort: 6001,
     wssPort: 6001,
     forceTLS: true,

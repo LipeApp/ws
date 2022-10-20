@@ -120,12 +120,12 @@ return [
          * Path to local private key file on filesystem in case of separate files for
          * certificate (local_cert) and private key.
          */
-        'local_pk' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_PK', null),
+        'local_pk' => env('LARAVEL_WEBSOCKETS_SSL_LOCAL_PK', "/etc/letsencrypt/live/test.lipe.uz/fullchain.pem"),
 
         /*
          * Passphrase for your local_cert file.
          */
-        'passphrase' => env('LARAVEL_WEBSOCKETS_SSL_PASSPHRASE', null),
+        'passphrase' => env('LARAVEL_WEBSOCKETS_SSL_PASSPHRASE', "/etc/letsencrypt/live/test.lipe.uz/privkey.pem"),
     ],
 
     /*

@@ -28,6 +28,7 @@ window.Echo = new Echo({
     key: 'lipeapp_key',
     wsHost: window.location.hostname,
     wsPort: 6001,
+    wssPort: 6001,
     forceTLS: true,
     disableStats: true,
 });

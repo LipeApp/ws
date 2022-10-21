@@ -32,7 +32,7 @@ class Test implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('chanel');
+        return new Channel('channel');
     }
 
     public function broadcastAs(){

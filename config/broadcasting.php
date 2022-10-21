@@ -38,7 +38,7 @@ return [
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'encrypted' => true,
-                'host' => 'test.lipe.uz',
+                'host' => 'ws.tm.uz',
                 'port' => 6001,
                 'scheme' => 'https',
                 'curl_options' => [

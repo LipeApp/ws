@@ -17,16 +17,7 @@ return [
 
     'default' => env('BROADCAST_DRIVER', 'null'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Broadcast Connections
-    |--------------------------------------------------------------------------
-    |
-    | Here you may define all of the broadcast connections that will be used
-    | to broadcast events to other systems or over websockets. Samples of
-    | each available type of connection are provided inside this array.
-    |
-    */
+
 
     'connections' => [
 
@@ -38,7 +29,7 @@ return [
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'encrypted' => true,
-                'host' => 'ws.tm.uz',
+                'host' => env('PUSHER_HOST'),
                 'port' => 6001,
                 'scheme' => 'https',
                 'curl_options' => [
